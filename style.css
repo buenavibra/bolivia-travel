@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 .header {
   background-color: #1f2937;
   width: 100%;
@@ -14,20 +18,71 @@ li {
   text-decoration: none;
   color: #f9faf8;
 }
-.right a {
+.right a,
+.main p {
   text-decoration: none;
   color: #e5e7eb;
 }
 .right {
   display: flex;
   gap: 30px;
-
   font-size: 18px;
 }
 .left {
   justify-content: flex-start;
 }
 .logo {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
+}
+/* Main */
+.main {
+  background-color: #1f2937;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+}
+.main-left {
+  margin-left: 80px;
+  width: 80px;
+
+  flex: 1;
+}
+.main-right {
+  flex: 1;
+}
+.main img {
+  height: 200px;
+  width: 400px;
+  border: 5px solid #e5e7eb;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  margin-bottom: 15px;
+}
+button {
+  background-color: #3882f6;
+  height: 30px;
+  width: 100px;
+  border-radius: 25px;
+  color: #e5e7eb;
+  border: 3px solid #1f2937;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Places */
+.places {
+  display: flex;
+  justify-content: space-around;
+}
+.places img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
 }
